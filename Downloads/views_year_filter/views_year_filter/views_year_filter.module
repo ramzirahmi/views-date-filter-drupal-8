@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains views_year_filter.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ * @return string
+ */
+function views_year_filter_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the custom_filter module.
+        case 'help.page.views_year_filter':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('views year filter') . '</p>';
+            return $output;
+
+        default:
+    }
+}

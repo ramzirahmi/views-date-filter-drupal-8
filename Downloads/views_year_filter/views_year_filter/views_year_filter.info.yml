@@ -1,0 +1,5 @@
+name: 'Views year filter'
+type: module
+description: 'Views year filter'
+core: 8.x
+package: 'Custom'
